@@ -86,3 +86,18 @@
 
   }
 
+  .headerSpacer{
+      visibility: hidden;
+  }
+
+  body {
+      background-color: #181818;
+  }
+
+  @media screen and (max-width: 481px) {
+      .headerLink{
+          display:none;
+      }
+      
+  }
+
