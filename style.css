@@ -39,14 +39,17 @@
       padding: 0 8%;
       position: fixed;
       overflow: hidden;
+      top: 0px !important;
   }
 
   .light-mode header{
     background-color: #283D3B;
+    color: #fff;
   }
 
   .light-mode {
-    background-color: #EDDDD4;
+    background-color: #EDE0D3;
+    color: #040926;
   }
 
   .light-mode .modeSelector {
@@ -104,15 +107,31 @@
       background-color: #181818;
       color: #fff;
   }
-  .text_container{ 
-	position:relative; 
-	top:50px; 
-} 
+section {
+    margin-top: 100px;
+    margin-left: 50px;
+}
 
+
+
+.nameAnime {
+    font-size: auto;
+    text-transform: uppercase;
+    letter-spacing: 1em;
+    text-align: center;
+    padding-top: 100px;
+  }
+  
+  .nameAnime .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
   @media screen and (max-width: 481px) {
       .headerLink{
           display:none;
       }
-      
+      .nameAnime {
+        font-size: auto;
+      }
   }
 

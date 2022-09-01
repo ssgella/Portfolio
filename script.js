@@ -1,3 +1,5 @@
+
+
 var isDark = false
 
 const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -42,3 +44,22 @@ if (isDark) {
 } else {
     modeChange()
 }
+
+var textWrapper = document.querySelector('.nameAnime');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        
+const nameIn = anime({
+    targets: '.nameAnime .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+})
+
+
+
+
+
