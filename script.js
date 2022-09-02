@@ -55,7 +55,7 @@ const nameIn = anime({
     translateZ: 0,
     opacity: [0,1],
     easing: "easeOutExpo",
-    duration: 1200,
+    duration: 10000,
     delay: (el, i) => 500 + 30 * i
 })
 

@@ -11,8 +11,8 @@
     white-space: nowrap;
     direction: ltr;
     border-width: 0px;
-    background-color: black;
-    color: white;
+    background-color: transparent;
+    color:#EDE0D3;
     padding: 2px;
   
     /* Support for all WebKit browsers. */
@@ -31,20 +31,32 @@
       margin: 0;
       padding: 0;
       font-family: Arial, Helvetica, sans-serif;
+      scroll-margin-top: 100px;
   }
 
   header {
-      background-color: black;
+      background-color:#1D1E25;
       width: 100%;
       padding: 0 8%;
       position: fixed;
       overflow: hidden;
       top: 0px !important;
+      z-index: 1;
   }
 
   .light-mode header{
     background-color: #283D3B;
-    color: #fff;
+    color: #EDE0D3;
+  }
+  footer {
+    background-color:#1D1E25;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .light-mode footer {
+    background-color: #283D3B;
+    color: #EDE0D3;
   }
 
   .light-mode {
@@ -78,14 +90,14 @@
 
   .navLinks li a {
       text-decoration: none;
-      color: white;
+      color: #EDE0D3;
       padding: 5px 0;
       position: relative;
   }
 
   .navLinks li a::after{
       content: '';
-      background: #fff;
+      background: #EDE0D3;
       width: 0;
       height: 2px;
       position: absolute;
@@ -104,27 +116,31 @@
   }
 
   body {
-      background-color: #181818;
-      color: #fff;
+      background-color: #212834;
+      color: #EDE0D3;
   }
 section {
     margin-top: 100px;
     margin-left: 50px;
+    margin-bottom: 50px;
 }
 
 
 
 .nameAnime {
     font-size: auto;
+    font-size: 9vmin;
+    font-weight: bolder;
     text-transform: uppercase;
-    letter-spacing: 1em;
+    letter-spacing: 0.5em;
     text-align: center;
     padding-top: 100px;
   }
   
   .nameAnime .letter {
     display: inline-block;
-    line-height: 1em;
+    line-height: 4em;
+    font-family: 'Amatic SC', cursive;
   }
   @media screen and (max-width: 481px) {
       .headerLink{
@@ -134,4 +150,5 @@ section {
         font-size: auto;
       }
   }
+ 
 
